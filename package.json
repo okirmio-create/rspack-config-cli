@@ -1,25 +1,39 @@
 {
   "name": "@asdsadw12312dwd2112xz/rspack-config-cli",
   "version": "1.0.0",
-  "description": "CLI tool for Rspack configuration generation, migration guides, and built-in plugin references",
+  "description": "CLI tool to generate and manage Rspack bundler configurations",
   "type": "module",
   "bin": {
     "rspack-config": "./dist/index.js"
   },
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "build": "tsup",
-    "dev": "tsup --watch"
+    "build": "node node_modules/tsup/dist/cli-default.js",
+    "dev": "node node_modules/tsup/dist/cli-default.js --watch",
+    "prepublishOnly": "npm run build"
   },
   "dependencies": {
     "chalk": "^5.3.0",
     "commander": "^12.1.0"
   },
   "devDependencies": {
-    "@types/node": "^25.5.2",
+    "@types/node": "^20.14.0",
     "tsup": "^8.1.0",
-    "typescript": "^5.4.5"
+    "typescript": "^5.5.0"
   },
-  "files": [
-    "dist"
-  ]
+  "keywords": [
+    "rspack",
+    "webpack",
+    "bundler",
+    "config",
+    "cli",
+    "generator"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/okirmio-create/rspack-config-cli"
+  }
 }

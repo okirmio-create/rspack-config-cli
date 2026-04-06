@@ -3,3 +3,7 @@ src/
 tsconfig.json
 tsup.config.ts
 *.ts
+node_modules/
+.gitignore
+coverage/
+*.log
