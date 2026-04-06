@@ -1,0 +1,25 @@
+{
+  "name": "@asdsadw12312dwd2112xz/rspack-config-cli",
+  "version": "1.0.0",
+  "description": "CLI tool for Rspack configuration generation, migration guides, and built-in plugin references",
+  "type": "module",
+  "bin": {
+    "rspack-config": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^12.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.2",
+    "tsup": "^8.1.0",
+    "typescript": "^5.4.5"
+  },
+  "files": [
+    "dist"
+  ]
+}
