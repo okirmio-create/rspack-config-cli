@@ -1,6 +1,5 @@
-node_modules/
+.omc/
 src/
-tsup.config.ts
 tsconfig.json
-*.log
-.DS_Store
+tsup.config.ts
+*.ts
